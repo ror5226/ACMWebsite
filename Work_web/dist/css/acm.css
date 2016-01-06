@@ -31,7 +31,7 @@ h6, .h6 {
 
 @media (min-width: 1200px) {
   .container {
-    width: 970px;
+    width: 1500px;
   }
 }
 
@@ -86,7 +86,6 @@ h6, .h6 {
  */
 
 .acm-header {
-  
   padding-top: 20px;
   padding-bottom: 20px;
 }
