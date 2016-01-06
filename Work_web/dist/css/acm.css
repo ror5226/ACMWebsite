@@ -187,7 +187,11 @@ h6, .h6 {
     width: 100px;
     height: 100px;
     vertical-align: center;
-    padding-left: 0;
-    
+    padding-left: 0; 
 }
-    
+
+/* Mikes ovride btn class to make btns look better*/
+.btn{
+    background-color: #00BFFF;
+    border-color: #00BFFF;
+}
