@@ -26,14 +26,24 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-
-  <body>
       
+    <!-- /for slide show  -->
+    <script type = "text/javascript">
+        var slideimages = new Array()
+        slideimages[0]  = new Image()
+        slideimages[0].src = "/img/allofus.png"
+        slideimages[1]  = new Image()
+        slideimages[1].src ="/img/psuhack.jpg" 
+        slideimages[2]  = new Image() 
+        slideimages[2].src = "/img/penn-state-erie.jpg"
+   </script>
+  </head>
+       
+  <body>
    <!-- banner --> 
     <div class="acm-header">
-            <img class = "mikes-image" src="/img/acmLogo.jpg" alt="">
-            <p class="acm-title">Association for Computing Machinery </p>
+        <img class = "mikes-image" src="/img/acmLogo.jpg" alt="">
+        <p class="acm-title">Penn State Behrend ACM </p>
     </div>
     <br>
     <br>
@@ -51,38 +61,66 @@
       </div>
     </div>
       
-
+    <!-- /.acm-main -->
     <div class="container">
       <div class="row">
-        <div class="col-md-6 acm-main"> The Association for Computing Machinery is an international learned society for computing. It was founded in 1947 and is the world's largest scientific and educational computing society. It is a not-for-profit professional membership group.</div>
-        
-        <!-- /.acm-main -->
-        <div class="col-sm-3 col-sm-offset-1 acm-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About</h4>
-            <p>This website is for the Penn State Behrend ACMc </p>
-          </div>
-        <div class="col-sm-8 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module">
-            <h4>Elsewhere</h4>
-            <ol class="list-unstyled">
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
-            </ol>
-          </div>
+        <div class="col-md-6 acm-main"> 
+          
+            <!-- /slide show -->
+            <img src="/img/allofus.png" id="slide" width=500 height=500 />
+            <script type="text/javascript">
+              
+              //variable that will increment through the images
+              var step = 0
+              
+              function slideit(){
+                //if browser does not support the image object, exit.
+                if (!document.images)
+                return
+                document.getElementById('slide').src = slideimages[step].src
+                whichimage = step
+                if (step<2)
+                step++
+                else
+                step=0
+                //call function "slideit()" every 2.5 seconds
+                setTimeout("slideit()",2500)
+              }
+              
+              slideit()
+            </script>
         </div>
+        
+        <!-- side bar --> 
+        <div class="col-sm-3 col-sm-offset-1 acm-sidebar">
+            <div class="sidebar-module sidebar-module-inset">
+                <h4>Upcoming Events:</h4>
+            
+                <p>Brick Hacks March 5th</p>
+                <p>Hack PSU    April 4th</p>    
+                <p> Go to calnedar for links and more information </p>
+            </div>
+            <div class="col-sm-8 col-sm-offset-1 blog-sidebar">
+                <div class="sidebar-module">
+                    <h4>Elsewhere</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ol>
+                </div>
+            </div>
         </div><!-- /.acm-sidebar -->
       </div><!-- /.row -->
     </div><!-- /.container -->
-
+    
+    <!-- footer -->
     <footer class="acm-footer">
       <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
       <p>
         <a href="#">Back to top</a>
       </p>
     </footer>
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
