@@ -172,6 +172,12 @@
           if (dayEvents.url) {
             day.find("a").attr("href", dayEvents.url);
           }
+          if(dayEvents.string != null){
+            badge = $("<p></p>").html(dayEvents.string).addClass("badge");
+              if (dayEvents.badgeClass != null) {
+              badge.addClass(dayEvents.badgeClass);
+            }
+          }
         }
         return day;
       },
