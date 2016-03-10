@@ -97,12 +97,13 @@
     <script type="text/javascript">
       $(document).ready(function () {
         $(".responsive-calendar").responsiveCalendar({
-          time: '2016-02',
+          time: '2016-03',
             
         // how we will be adding events to our calendar just pick the date and create a page for to link
+        // to put text in the badge simply use "" with number look at examples below
           events: {
-            "2016-03-05": {"name": "8", "url": "https://brickhack.io/"},
-            "2016-04-09": {"number": 7, "url": "http://hackpsu.org/","dayEvents":[{"name": "Hack PSU"}]}, 
+            "2016-03-05": {"number": "Brick hacks", "url": "https://brickhack.io/"},
+            "2016-04-09": {"number": "PSU Hacks", "url": "http://hackpsu.org/","dayEvents":[{"string": "Hack PSU"}]}, 
           }
         });
       });
