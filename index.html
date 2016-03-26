@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Michael Stumpf">
     <link rel="icon" href="../../favicon.ico">
 
     <title>ACM Home Page </title>
@@ -16,6 +16,7 @@
 
     <!-- Custom styles for this template -->
     <link href="dist/css/acm.css" rel="stylesheet">
+    <link href="dist/css/acm_small.css" rel="stylesheet" media = "min-width: 600px)">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -33,9 +34,11 @@
         slideimages[0]  = new Image()
         slideimages[0].src = "img/allofus.png"
         slideimages[1]  = new Image()
-        slideimages[1].src ="img/psuhack.jpg" 
+        slideimages[1].src ="img/brick_hacks.png" 
         slideimages[2]  = new Image() 
         slideimages[2].src = "img/penn-state-erie.jpg"
+        slideimages[3]  = new Image()
+        slideimages[3].src = "img/meAndRachelCupStack.png"
    </script>
   </head>
        
@@ -79,7 +82,7 @@
                 return
                 document.getElementById('slide').src = slideimages[step].src
                 whichimage = step
-                if (step<2)
+                if (step<3)
                 step++
                 else
                 step=0
@@ -96,9 +99,11 @@
             <div class="sidebar-module sidebar-module-inset">
                 <h4>Upcoming Events:</h4>
             
-                <p>Brick Hacks March 5th</p>
-                <p>Hack PSU    April 4th</p>    
+                <p>Hack PSU April 4th</p> 
+                <a href = "http://hackpsu.org/"> learn more </a>
+                
                 <p> Go to calnedar for links and more information </p>
+                <a href = "clubCalendar.html"> club calendar</a>
             </div>
             <div class="col-sm-8 col-sm-offset-1 blog-sidebar">
                 <div class="sidebar-module">
