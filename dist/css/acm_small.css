@@ -29,7 +29,7 @@ h6, .h6 {
  * Override Bootstrap's default container.
  */
 
-@media (min-width: 1200px) {
+@media (min-width: 600px) {
   .container {
     width: 1500px;
   }
@@ -41,7 +41,7 @@ h6, .h6 {
  */
 
 .acm-masthead {
-  background-color: #00BFFF;
+  background-color: #0027F9;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
           box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
 }
@@ -181,6 +181,7 @@ h6, .h6 {
  * Mikes additions
  */
 
+
 /*only affects acm logo*/
 .mikes-image {
     float: left;
@@ -193,10 +194,9 @@ h6, .h6 {
 
 /* meant to affect only body pictures*/
 .body-image{
-    width:  300px;
-    height: 300px;
+    width:  150px;
+    height: 150px;
 }
-
 /* Mikes ovride btn class to make btns look better*/
 .btn{
     background-color: #00BFFF;
