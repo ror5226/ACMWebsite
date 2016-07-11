@@ -40,7 +40,7 @@
      <!-- banner --> 
     <div class="acm-header">
             <img class = "mikes-image" src="img/acmLogo.jpg" alt="">
-            <p class="acm-title">Association for Computing Machinery </p>
+            <p class="acm-title">Penn State Behrend ACM </p>
     </div>
     <br>
     <br>
@@ -95,9 +95,17 @@
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="dist/js/responsive-calendar.js"></script>
     <script type="text/javascript">
+      
+      var currentTime = new Date();
+      var dateNum = currentTime.getFullYear();
+      var dateString = dateNum.toString() + "-";
+      var dateNum = currentTime.getMonth()+1; 
+      var dateString = dateString + dateNum.toString(); 
+      
+      
       $(document).ready(function () {
         $(".responsive-calendar").responsiveCalendar({
-          time: '2016-03',
+          time: dateString,
             
         // how we will be adding events to our calendar just pick the date and create a page for to link
         // to put text in the badge simply use "" with number look at examples below
