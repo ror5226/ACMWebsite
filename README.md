@@ -18,5 +18,5 @@ This is using bootstrap please give a quick google before you use.
 If you would like to upload pictures to the site be sure to store them 
 in img folder. 
 
-When updating make sure to Branch, commit to branch, then merge branch with master. Failure to do so will result in sync errors on windows machines. 
+When updating make sure to Branch, commit to branch, then merge branch with master. Failure to do so will result in sync errors on windows machines
 
