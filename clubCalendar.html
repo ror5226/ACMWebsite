@@ -49,7 +49,7 @@
     <div class="acm-masthead">
       <div class="container">
         <nav class="acm-nav">
-          <a class="acm-nav-item" href="home.html">Home</a>
+          <a class="acm-nav-item" href="index.html">Home</a>
           <a class="acm-nav-item" href="students.html">Leaders</a>
           <a class="acm-nav-item" href="projects.html">Projects</a>
           <a class="acm-nav-item active" href="clubCalendar.html">Club Calendar</a>
@@ -105,13 +105,18 @@
       
       $(document).ready(function () {
         $(".responsive-calendar").responsiveCalendar({
+<<<<<<< HEAD
           time: dateString,
+=======
+          time: '2016-04',
+>>>>>>> origin/master
             
         // how we will be adding events to our calendar just pick the date and create a page for to link
         // to put text in the badge simply use "" with number look at examples below
           events: {
-            "2016-03-05": {"number": "Brick Hacks", "url": "https://brickhack.io/"},
-            "2016-04-09": {"number": "Hack PSU", "url": "http://hackpsu.org/","dayEvents":[{"string": "Hack PSU"}]}, 
+            "2016-04-29": {"number": "Tech Talk"},
+            "2016-04-14": {"number": "Club Elections"},
+            "2016-06-17": {"number": "Erie Day of Code", "url": "http://eriedayofcode.com/"}, 
           }
         });
       });
