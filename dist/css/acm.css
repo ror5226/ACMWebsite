@@ -25,16 +25,6 @@ h6, .h6 {
 }
 
 
-/*
- * Override Bootstrap's default container.
- */
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1500px;
-  }
-}
-
 
 /*
  * Masthead for nav
@@ -164,30 +154,12 @@ h6, .h6 {
   border-radius: 30px;
 }
 
-
-/*
- * Blog posts
- */
-
-.acm-post {
-  margin-bottom: 60px;
-}
-.acm-post-title {
-  margin-bottom: 5px;
-  font-size: 40px;
-}
-.acm-post-meta {
-  margin-bottom: 20px;
-  color: #999;
-}
-
-
 /*
  * Footer
  */
 
 .acm-footer {
-  padding: 40px 0;
+ 
   color: #999;
   text-align: center;
   background-color: #f9f9f9;
